@@ -1,0 +1,8 @@
+<!-- In student_detail.html -->
+<h1>{{ student.name }}</h1>
+<h2>Teachers:</h2>
+<ul>
+    {% for teacher in teachers %}
+        <li>{{ teacher.name }}</li>
+    {% endfor %}
+</ul>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Certificate Verification</title>
+</head>
+<body>
+    <h1>Certificate Verification Result</h1>
+    {% if valid %}
+        <p>Certificate is valid.</p>
+        <p>Student: {{ student }}</p>
+        <p>Teacher: {{ teacher }}</p>
+    {% else %}
+        <p>Certificate is not valid. Error: {{ error }}</p>
+    {% endif %}
+</body>
+</html>

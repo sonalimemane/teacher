@@ -1,0 +1,8 @@
+<h2>Add Student</h2>
+<form method="post" action="{% url 'student:add_student'  %}">
+    {% csrf_token %}
+
+    <label for="id_name">Name:</label>
+    <input type="text" id="id_name" name="name" required>
+    <button type="submit">Add Student</button>
+</form>
